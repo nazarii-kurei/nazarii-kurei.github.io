@@ -5,7 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Nazarii Kurei · Unity Developer</title>
-<meta name="description" content="Nazarii Kurei, Unity developer: CV, portfolio and gameplay videos.">
+<meta name="description" content="Nazarii Kurei, unity developer in Umeå: CV, portfolio and gameplay video.">
+<meta property="og:title" content="Nazarii Kurei · Unity Developer">
+<meta property="og:description" content="Gameplay programmer: I built all the gameplay mechanics of a DOTS/ECS strategy game on Google Play, and I&#x27;m the sole developer of a new ECS lane-battle game.">
+<meta property="og:image" content="https://nazarii-kurei.github.io/media/battle-clans-lane-poster.jpg">
+<meta property="og:url" content="https://nazarii-kurei.github.io/2/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1726'/%3E%3Ctext x='32' y='43' font-family='Segoe UI,Arial' font-size='30' font-weight='700' text-anchor='middle' fill='%233ddc97'%3ENK%3C/text%3E%3C/svg%3E">
 <style>
   :root {
     --bg: #0e1726; --panel: #15213a; --line: #26344f;
@@ -13,68 +19,75 @@
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font: 16px/1.55 "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
-  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; }
   main { max-width: 960px; margin: 0 auto; padding: 48px 16px 64px; }
-  .eyebrow { color: var(--accent); letter-spacing: .3em; font-size: 13px; font-weight: 600; text-transform: uppercase; margin: 0 0 12px; }
+  .eyebrow { color: var(--accent); letter-spacing: .2em; font-size: 13px; font-weight: 600; text-transform: uppercase; margin: 0 0 12px; }
   h1 { font-size: clamp(34px, 7vw, 56px); line-height: 1.05; margin: 0 0 12px; }
-  .lead { font-size: 20px; margin: 0 0 6px; }
+  .keywords { font-size: 15px; color: var(--muted); margin: 0 0 14px; }
+  .lead { font-size: 20px; margin: 0 0 8px; max-width: 46em; }
   .muted { color: var(--muted); margin: 0; }
-  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 0; }
-  .btn {
-    display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 8px;
-    border: 1px solid var(--line); color: var(--text); text-decoration: none; font-weight: 600;
-  }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 0; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 8px; border: 1px solid var(--line); color: var(--text); text-decoration: none; font-weight: 600; }
   .btn:hover { border-color: var(--accent); }
   .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
-  section { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--line); }
+  a:focus-visible, .btn:focus-visible, video:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  section { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line); }
   h2 { font-size: 28px; margin: 0 0 4px; }
-  .tag { color: var(--accent); letter-spacing: .25em; font-size: 12px; font-weight: 600; text-transform: uppercase; margin: 0 0 16px; }
-  video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; background: #000; }
+  .tag { color: var(--accent); letter-spacing: .2em; font-size: 12px; font-weight: 600; text-transform: uppercase; margin: 0 0 16px; }
+  video, .shot { display: block; width: 100%; height: auto; border-radius: 10px; background: #000; }
+  video { aspect-ratio: 16 / 9; }
+  .caption { color: var(--muted); font-size: 14px; margin: 8px 0 0; font-style: italic; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 24px; }
   .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
   .card h3 { margin: 0 0 6px; font-size: 16px; }
   .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .note { margin-top: 16px; padding: 12px 16px; border-left: 3px solid var(--accent); background: var(--panel); border-radius: 0 8px 8px 0; color: var(--text); }
   a { color: var(--accent); }
   footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+  @media (max-width: 600px) {
+    main { padding-top: 24px; }
+    .lead { font-size: 18px; }
+    .actions { gap: 8px; margin-top: 18px; }
+    .btn { padding: 9px 14px; font-size: 15px; }
+    section { margin-top: 36px; padding-top: 24px; }
+  }
 </style>
 </head>
 <body>
 <main>
-  <p class="eyebrow">Portfolio</p>
+  <p class="eyebrow">Gameplay programmer · Umeå, Sweden</p>
   <h1>Nazarii Kurei</h1>
-  <p class="lead">Unity Developer · Gameplay programming · Game feel &amp; UI · Performance</p>
-  <p class="muted">Umeå, Sweden · right to work in Sweden · available on-site in Umeå</p>
+  <p class="keywords">Unity Developer · Gameplay programming · Game feel &amp; AI · Performance</p>
+  <p class="lead">Gameplay programmer: I built all the gameplay mechanics of a DOTS/ECS strategy game on Google Play, and I&#x27;m the sole developer of a new ECS lane-battle game.</p>
+  <p class="muted">Right to work in Sweden · on-site in Umeå, or remote with regular visits</p>
   <div class="actions">
-    <a class="btn primary" href="files/Nazarii_Kurei_Portfolio.pdf">Portfolio (PDF)</a>
-    <a class="btn" href="files/Nazarii_Kurei_CV.pdf">CV (PDF)</a>
-    <a class="btn" href="mailto:nazariikurei@gmail.com">nazariikurei@gmail.com</a>
+    <a class="btn primary" href="files/Nazarii_Kurei_Portfolio.pdf">Portfolio (PDF, 1.3 MB)</a>
+    <a class="btn" href="files/Nazarii_Kurei_CV.pdf">CV (PDF, 0.2 MB)</a>
+    <a class="btn" href="mailto:nazariikurei@gmail.com">Email me</a>
     <a class="btn" href="https://www.linkedin.com/in/nazarii-kurei-2042aa263/">LinkedIn</a>
   </div>
 
   <section id="battle-clans-lane">
     <h2>Battle Clans Lane</h2>
-    <p class="tag">Pre-release · Android · Unity 6 ECS · Optor Games</p>
-    <video controls playsinline preload="metadata" poster="../media/battle-clans-lane-poster.jpg">
+    <p class="tag">Pre-release · Android · Unity 6 ECS · Optor Games · sole developer</p>
+    <video controls playsinline preload="metadata" poster="../media/battle-clans-lane-poster.jpg" aria-label="Battle Clans Lane gameplay from the current build">
       <source src="../media/battle-clans-lane.mp4" type="video/mp4">
       Your browser can't play this video. <a href="../media/battle-clans-lane.mp4">Download it (MP4)</a>.
     </video>
-    <p class="muted" style="margin-top:14px">A new lane-battle strategy game: army orders, enemy AI and spell-casters, built on ECS for 60–240 units per battle. Sole developer. Gameplay from the current build.</p>
+    <p class="muted" style="margin-top:14px">A new lane-battle strategy game: army orders, enemy AI and spell-casters, built on ECS for 60–240 units per battle. Gameplay from the current build.</p>
+    <p class="note">Everything here is Unity and C#. Gameplay structure, AI, game feel and profiling are the parts I&#x27;d bring to an Unreal team, and I&#x27;m ready to ramp up on Unreal and C++.</p>
     <div class="grid">
-      <div class="card"><h3>ECS battle pipeline</h3><p>30 Hz fixed tick with ordered phases (Sense, Decide, Act, Resolve); unit state model picked by benchmark; six architecture decision records.</p></div>
-      <div class="card"><h3>No physics for crowds</h3><p>Benchmarked Unity Physics against a sorted lane array: 240 units, 7.2 ms vs 0.41 ms per tick (editor, Burst), so units use a custom contact solver.</p></div>
-      <div class="card"><h3>GPU-baked units</h3><p>One-click baking of rigged units into GPU-animated ECS units; hit frames come from the baked clip events.</p></div>
-      <div class="card"><h3>Effects</h3><p>Wizard fireball, lightning, hammer impacts, castle damage and health bars, tuned live from a look-only VFX config.</p></div>
-      <div class="card"><h3>Mobile build &amp; startup</h3><p>Cold-start benchmark (adb, Perfetto, boot marks); deferred ECS world and lobby loads; Android texture caps; fixed an IL2CPP-only crash on first spawn.</p></div>
-      <div class="card"><h3>Testing &amp; diagnostics</h3><p>190+ EditMode tests, headless bot matches and a 52-match AI sweep; an always-on unit flight recorder logs anomalies.</p></div>
+      <div class="card"><h3>Effects</h3><p>Wizard fireball, lightning, hammer impacts, castle damage and health bars; fireball, hammer and health bars tuned live from a look-only VFX config.</p></div>
+      <div class="card"><h3>Hits on the impact frame</h3><p>Rigged units baked in one click into GPU-animated ECS units; gameplay owns the timing, and hits land on the animation&#x27;s impact frame from the baked clip events.</p></div>
+      <div class="card"><h3>ECS battle pipeline</h3><p>30 Hz fixed tick with ordered phases (Sense, Decide, Act, Resolve); same-seed replays checked by state hash in tests; six architecture decision records.</p></div>
+      <div class="card"><h3>Testing &amp; diagnostics</h3><p>190+ EditMode tests, headless bot matches and a 52-match AI sweep across decks, opponents and seeds; a development-build flight recorder logs unit anomalies.</p></div>
+      <div class="card"><h3>No physics for crowds</h3><p>Benchmarked Unity Physics against a sorted lane array: 240 units, 7.2 ms vs 0.41 ms per tick for the lane alone (editor benchmark, Burst). Units now use the sorted lane with a light contact pass.</p></div>
     </div>
   </section>
 
   <section id="more">
     <h2>More work</h2>
-    <p class="muted">War Strategy of Battle Clans (all gameplay mechanics: squads, formations, combat, hero skills, flanking AI), TrueFoundry Grand Prix (Unity HDRP booth racer, sole developer) and more shipped titles are in the <a href="files/Nazarii_Kurei_Portfolio.pdf">portfolio PDF</a>.</p>
+    <p class="muted">War Strategy of Battle Clans: I built all the gameplay mechanics (squads, formations, melee and ranged combat, hero skills, flanking and assassin AI), working with 1–2 other developers and artists. Also: TrueFoundry Grand Prix, a Unity HDRP racer for a conference booth with gamepad and keyboard sign-up, and an arcade fighting game MVP built from scratch for a client. Details are in the <a href="files/Nazarii_Kurei_Portfolio.pdf">portfolio PDF</a>.</p>
     <div class="actions">
       <a class="btn" href="https://www.youtube.com/watch?v=E7bZbBsHRw4">War Strategy of Battle Clans: trailer</a>
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.OptorGroup.WarStrategyOfBattleClans">Battle Clans on Google Play</a>
